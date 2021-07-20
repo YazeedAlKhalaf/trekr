@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start-dev": "nodemon",
-    "start": "ts-node dist/server",
+    "start": "node dist/server",
     "build": "tsc"
   },
   "keywords": [],
