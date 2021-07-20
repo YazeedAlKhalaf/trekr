@@ -8,18 +8,42 @@
 import Foundation
 
 class LocationsLoader: ObservableObject {
-    let places: [Location]
+    @Published var locations: [Location] = [Location]()
+    @Published var gotData: Bool = false
     
     var primary: Location {
-        places[0]
+        locations[0]
     }
     
     init() {
-        let url = Bundle.main.url(
-            forResource: "locations",
-            withExtension: "json"
-        )!
-        let data = try! Data(contentsOf: url)
-        places = try! JSONDecoder().decode([Location].self, from: data)
+        getLocations(
+            completion: { locations in
+                self.locations = locations
+                self.gotData = true
+            }
+        )
+    }
+    
+    private func getLocations(completion: @escaping ([Location]) -> ()) {
+        guard
+            let url = URL(string: "http://10.10.7.203:9000/discover")
+        else {
+            print("invalid url")
+            return
+        }
+        
+        // make request
+        URLSession.shared.dataTask(
+            with: url
+        ) { data, response, error in
+            let locations = try! JSONDecoder().decode(
+                [Location].self,
+                from: data!
+            )
+            
+            DispatchQueue.main.async {
+                completion(locations)
+            }
+        }.resume()
     }
 }

@@ -25,7 +25,7 @@ struct WorldView: View {
     var body: some View {
         Map(
             coordinateRegion: $region,
-            annotationItems: locationsLoader.places
+            annotationItems: locationsLoader.locations
         ) { location in
             MapAnnotation(
                 coordinate: CLLocationCoordinate2D(

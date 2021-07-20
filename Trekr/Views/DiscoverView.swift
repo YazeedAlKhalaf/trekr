@@ -11,22 +11,25 @@ struct DiscoverView: View {
     @EnvironmentObject var locationsLoader: LocationsLoader
     
     var body: some View {
-        ScrollView {
-            ForEach(locationsLoader.places) {location in
-                NavigationLink(
-                    destination: LocationInfoView(
-                        location: location
-                    )
-                ) {
-                    LocationWidget(
-                        location: location
-                    )
+        if !locationsLoader.gotData {
+            ProgressView()
+                .navigationTitle("Discover")
+        } else {
+            ScrollView {
+                ForEach(locationsLoader.locations) {location in
+                    NavigationLink(
+                        destination: LocationInfoView(
+                            location: location
+                        )
+                    ) {
+                        LocationWidget(
+                            location: location
+                        )
+                    }
                 }
             }
-            
+            .navigationTitle("Discover")
         }
-        .navigationTitle("Discover")
-        .buttonStyle(PlainButtonStyle())
     }
 }
 
