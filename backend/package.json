@@ -1,16 +1,14 @@
 {
   "name": "trekr_api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
     "start-dev": "nodemon",
     "start": "ts-node dist/server",
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Yazeed AlKhalaf",
   "dependencies": {
     "express": "^4.17.1"
   },
