@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start-dev": "nodemon",
-    "start": "ts-node dist/server",
-    "build": "tsc"
+    "start": "ts-node src/server.ts"
   },
   "keywords": [],
   "author": "Yazeed AlKhalaf",
