@@ -16,6 +16,9 @@
 		055F4DF526A70F510099DABD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DF426A70F510099DABD /* Location.swift */; };
 		055F4DF726A70F510099DABD /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DF626A70F510099DABD /* Locations.swift */; };
 		055F4DF926A70F510099DABD /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DF826A70F510099DABD /* WorldView.swift */; };
+		055F4DFB26A7164B0099DABD /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DFA26A7164B0099DABD /* Tip.swift */; };
+		055F4DFD26A717490099DABD /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DFC26A717490099DABD /* TipsView.swift */; };
+		055F4DFF26A717BE0099DABD /* TipsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DFE26A717BE0099DABD /* TipsLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		055F4DF426A70F510099DABD /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		055F4DF626A70F510099DABD /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		055F4DF826A70F510099DABD /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		055F4DFA26A7164B0099DABD /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		055F4DFC26A717490099DABD /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		055F4DFE26A717BE0099DABD /* TipsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				055F4DE126A70F500099DABD /* TrekrApp.swift */,
+				055F4DFC26A717490099DABD /* TipsView.swift */,
+				055F4DFE26A717BE0099DABD /* TipsLoader.swift */,
+				055F4DFA26A7164B0099DABD /* Tip.swift */,
 				055F4DF826A70F510099DABD /* WorldView.swift */,
 				055F4DE326A70F500099DABD /* ContentView.swift */,
 				055F4DF626A70F510099DABD /* Locations.swift */,
@@ -158,6 +167,9 @@
 				055F4DE426A70F500099DABD /* ContentView.swift in Sources */,
 				055F4DF526A70F510099DABD /* Location.swift in Sources */,
 				055F4DF926A70F510099DABD /* WorldView.swift in Sources */,
+				055F4DFB26A7164B0099DABD /* Tip.swift in Sources */,
+				055F4DFD26A717490099DABD /* TipsView.swift in Sources */,
+				055F4DFF26A717BE0099DABD /* TipsLoader.swift in Sources */,
 				055F4DF726A70F510099DABD /* Locations.swift in Sources */,
 				055F4DE226A70F500099DABD /* TrekrApp.swift in Sources */,
 			);

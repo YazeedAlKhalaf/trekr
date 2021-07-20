@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct TrekrApp: App {
     @StateObject var locations: Locations = Locations()
+    @StateObject var tipsLoader: TipsLoader = TipsLoader()
     
     var body: some Scene {
         WindowGroup {
@@ -29,8 +30,17 @@ struct TrekrApp: App {
                     Image(systemName: "globe")
                     Text("Locations")
                 }
+                
+                NavigationView {
+                    TipsView()
+                }
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Info")
+                }
             }
             .environmentObject(locations)
+            .environmentObject(tipsLoader)
         }
     }
 }
