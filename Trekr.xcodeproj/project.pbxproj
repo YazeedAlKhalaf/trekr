@@ -21,6 +21,7 @@
 		055F4DFF26A717BE0099DABD /* TipsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DFE26A717BE0099DABD /* TipsLoader.swift */; };
 		055F4E0626A7241C0099DABD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055F4E0526A7241C0099DABD /* MapKit.framework */; };
 		055F4E0A26A7337F0099DABD /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4E0926A7337F0099DABD /* LocationInfoView.swift */; };
+		055F4E0C26A73A360099DABD /* LocationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4E0B26A73A360099DABD /* LocationWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		055F4DFE26A717BE0099DABD /* TipsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsLoader.swift; sourceTree = "<group>"; };
 		055F4E0526A7241C0099DABD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		055F4E0926A7337F0099DABD /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
+		055F4E0B26A73A360099DABD /* LocationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		055F4DE026A70F500099DABD /* Trekr */ = {
 			isa = PBXGroup;
 			children = (
+				055F4E0D26A73A5A0099DABD /* Widgets */,
 				055F4E0326A722670099DABD /* Resources */,
 				055F4E0226A722590099DABD /* Views */,
 				055F4E0126A722490099DABD /* Loaders */,
@@ -138,6 +141,14 @@
 				055F4E0526A7241C0099DABD /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		055F4E0D26A73A5A0099DABD /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				055F4E0B26A73A360099DABD /* LocationWidget.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				055F4DE426A70F500099DABD /* DiscoverView.swift in Sources */,
 				055F4DF526A70F510099DABD /* Location.swift in Sources */,
+				055F4E0C26A73A360099DABD /* LocationWidget.swift in Sources */,
 				055F4DF926A70F510099DABD /* WorldView.swift in Sources */,
 				055F4DFB26A7164B0099DABD /* Tip.swift in Sources */,
 				055F4DFD26A717490099DABD /* TipsView.swift in Sources */,

@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    @EnvironmentObject var locationsLoader: LocationsLoader
     
     var body: some View {
         ScrollView {
-            Text("Discover view")
-        }.navigationTitle("Discover")
+            ForEach(locationsLoader.places) {location in
+                NavigationLink(
+                    destination: LocationInfoView(
+                        location: location
+                    )
+                ) {
+                    LocationWidget(
+                        location: location
+                    )
+                }
+            }
+            
+        }
+        .navigationTitle("Discover")
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
