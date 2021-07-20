@@ -9,44 +9,17 @@ import SwiftUI
 
 @main
 struct TrekrApp: App {
-    @StateObject var locationsLoader: LocationsLoader = LocationsLoader()
-    @StateObject var tipsLoader: TipsLoader = TipsLoader()
+    @ObservedObject var networkMonitorService: NetworkMonitorService = NetworkMonitorService()
     
     var body: some Scene {
         WindowGroup {
-            TabView {
-                NavigationView {
-                    DiscoverView()
-                }
-                .tabItem {
-                    Label(
-                        "Discover",
-                        systemImage: "airplane"
-                    )
-                }
-                
-                NavigationView {
-                    WorldView()
-                }
-                .tabItem {
-                    Label(
-                        "Locations",
-                        systemImage: "globe"
-                    )
-                }
-                
-                NavigationView {
-                    TipsView()
-                }
-                .tabItem {
-                    Label(
-                        "Info",
-                        systemImage: "list.bullet"
-                    )
-                }
+            if networkMonitorService.isConnected == 0 {
+                ProgressView()
+            } else if networkMonitorService.isConnected == 1 {
+                TrekrAppWidget()
+            } else {
+                NoInternetWidget()
             }
-            .environmentObject(locationsLoader)
-            .environmentObject(tipsLoader)
         }
     }
 }

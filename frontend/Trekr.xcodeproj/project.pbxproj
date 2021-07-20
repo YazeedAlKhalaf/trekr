@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05014F4326A76B9D00C8D730 /* NetworkMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05014F4226A76B9D00C8D730 /* NetworkMonitorService.swift */; };
+		05014F4626A7712100C8D730 /* TrekrAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05014F4526A7712100C8D730 /* TrekrAppWidget.swift */; };
+		05014F4826A7718900C8D730 /* NoInternetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05014F4726A7718900C8D730 /* NoInternetWidget.swift */; };
 		055F4DE226A70F500099DABD /* TrekrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DE126A70F500099DABD /* TrekrApp.swift */; };
 		055F4DE426A70F500099DABD /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DE326A70F500099DABD /* DiscoverView.swift */; };
 		055F4DE626A70F510099DABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055F4DE526A70F510099DABD /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05014F4226A76B9D00C8D730 /* NetworkMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorService.swift; sourceTree = "<group>"; };
+		05014F4526A7712100C8D730 /* TrekrAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekrAppWidget.swift; sourceTree = "<group>"; };
+		05014F4726A7718900C8D730 /* NoInternetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetWidget.swift; sourceTree = "<group>"; };
 		055F4DDE26A70F500099DABD /* Trekr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trekr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055F4DE126A70F500099DABD /* TrekrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekrApp.swift; sourceTree = "<group>"; };
 		055F4DE326A70F500099DABD /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -56,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05014F4426A76BA600C8D730 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05014F4226A76B9D00C8D730 /* NetworkMonitorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		055F4DD526A70F500099DABD = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +90,7 @@
 		055F4DE026A70F500099DABD /* Trekr */ = {
 			isa = PBXGroup;
 			children = (
+				05014F4426A76BA600C8D730 /* Services */,
 				055F4E0D26A73A5A0099DABD /* Widgets */,
 				055F4E0326A722670099DABD /* Resources */,
 				055F4E0226A722590099DABD /* Views */,
@@ -146,7 +161,9 @@
 		055F4E0D26A73A5A0099DABD /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				05014F4526A7712100C8D730 /* TrekrAppWidget.swift */,
 				055F4E0B26A73A360099DABD /* LocationWidget.swift */,
+				05014F4726A7718900C8D730 /* NoInternetWidget.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -226,10 +243,13 @@
 				055F4DF526A70F510099DABD /* Location.swift in Sources */,
 				055F4E0C26A73A360099DABD /* LocationWidget.swift in Sources */,
 				055F4DF926A70F510099DABD /* WorldView.swift in Sources */,
+				05014F4826A7718900C8D730 /* NoInternetWidget.swift in Sources */,
+				05014F4626A7712100C8D730 /* TrekrAppWidget.swift in Sources */,
 				055F4DFB26A7164B0099DABD /* Tip.swift in Sources */,
 				055F4DFD26A717490099DABD /* TipsView.swift in Sources */,
 				055F4DFF26A717BE0099DABD /* TipsLoader.swift in Sources */,
 				055F4E0A26A7337F0099DABD /* LocationInfoView.swift in Sources */,
+				05014F4326A76B9D00C8D730 /* NetworkMonitorService.swift in Sources */,
 				055F4DF726A70F510099DABD /* LocationsLoader.swift in Sources */,
 				055F4DE226A70F500099DABD /* TrekrApp.swift in Sources */,
 			);
