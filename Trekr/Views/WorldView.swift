@@ -9,7 +9,7 @@ import MapKit
 import SwiftUI
 
 struct WorldView: View {
-    @EnvironmentObject var locations: Locations
+    @EnvironmentObject var locationsLoader: LocationsLoader
     
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
@@ -25,7 +25,7 @@ struct WorldView: View {
     var body: some View {
         Map(
             coordinateRegion: $region,
-            annotationItems: locations.places
+            annotationItems: locationsLoader.places
         ) { location in
             MapAnnotation(
                 coordinate: CLLocationCoordinate2D(
@@ -34,7 +34,7 @@ struct WorldView: View {
                 )
             ) {
                 NavigationLink(
-                    destination: ContentView(location: location)
+                    destination: DiscoverView(location: location)
                 ) {
                     Image(location.country)
                         .resizable()

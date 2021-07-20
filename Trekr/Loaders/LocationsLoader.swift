@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Locations: ObservableObject {
+class LocationsLoader: ObservableObject {
     let places: [Location]
     
     var primary: Location {

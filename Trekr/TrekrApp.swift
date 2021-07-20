@@ -9,37 +9,43 @@ import SwiftUI
 
 @main
 struct TrekrApp: App {
-    @StateObject var locations: Locations = Locations()
+    @StateObject var locationsLoader: LocationsLoader = LocationsLoader()
     @StateObject var tipsLoader: TipsLoader = TipsLoader()
     
     var body: some Scene {
         WindowGroup {
             TabView {
                 NavigationView {
-                    ContentView(location: locations.primary)
+                    DiscoverView(location: locationsLoader.primary)
                 }
                 .tabItem {
-                    Image(systemName: "airplane")
-                    Text("Discover")
+                    Label(
+                        "Discover",
+                        systemImage: "airplane"
+                    )
                 }
                 
                 NavigationView {
                     WorldView()
                 }
                 .tabItem {
-                    Image(systemName: "globe")
-                    Text("Locations")
+                    Label(
+                        "Locations",
+                        systemImage: "globe"
+                    )
                 }
                 
                 NavigationView {
                     TipsView()
                 }
                 .tabItem {
-                    Image(systemName: "list.bullet")
-                    Text("Info")
+                    Label(
+                        "Info",
+                        systemImage: "list.bullet"
+                    )
                 }
             }
-            .environmentObject(locations)
+            .environmentObject(locationsLoader)
             .environmentObject(tipsLoader)
         }
     }
