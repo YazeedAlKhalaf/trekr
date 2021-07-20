@@ -34,7 +34,7 @@ struct WorldView: View {
                 )
             ) {
                 NavigationLink(
-                    destination: DiscoverView(location: location)
+                    destination: LocationInfoView(location: location)
                 ) {
                     Image(location.country)
                         .resizable()

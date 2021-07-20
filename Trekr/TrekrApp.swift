@@ -16,7 +16,7 @@ struct TrekrApp: App {
         WindowGroup {
             TabView {
                 NavigationView {
-                    DiscoverView(location: locationsLoader.primary)
+                    DiscoverView()
                 }
                 .tabItem {
                     Label(
