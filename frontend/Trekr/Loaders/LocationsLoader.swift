@@ -26,7 +26,7 @@ class LocationsLoader: ObservableObject {
     
     private func getLocations(completion: @escaping ([Location]) -> ()) {
         guard
-            let url = URL(string: "http://10.10.7.203:9000/discover")
+            let url = URL(string: "https://trekr-api.herokuapp.com/discover")
         else {
             print("invalid url")
             return
