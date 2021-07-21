@@ -32,9 +32,6 @@ class MainController {
           latitude: 57.12,
           longitude: -4.71,
           heroPicture: `${domain}/images/locations/highlands.jpg`,
-          pictures: ["photo2", "photo3", "photo4"],
-          advisory:
-            "We accept no liability for any visitors eaten alive by midges.",
         },
         {
           id: uuid.v4(),
@@ -47,18 +44,6 @@ class MainController {
           latitude: 35.6532,
           longitude: -83.507,
           heroPicture: `${domain}/images/locations/smokies.jpg`,
-          pictures: [
-            "photo1",
-            "photo2",
-            "photo3",
-            "photo4",
-            "photo5",
-            "photo6",
-            "photo7",
-            "photo8",
-          ],
-          advisory:
-            "We accept no liability for any visitors eaten alive by bears.",
         },
         {
           id: uuid.v4(),
@@ -71,8 +56,6 @@ class MainController {
           latitude: 50.8883,
           longitude: -125.5857,
           heroPicture: `${domain}/images/locations/knight-inlet.jpg`,
-          pictures: ["photo3", "photo4", "photo5", "photo6", "photo7"],
-          advisory: "",
         },
         {
           id: uuid.v4(),
@@ -85,8 +68,6 @@ class MainController {
           latitude: -20.4264,
           longitude: 57.4509,
           heroPicture: `${domain}/images/locations/black-river-gorges.jpg`,
-          pictures: ["photo4", "photo5", "photo6", "photo7", "photo8"],
-          advisory: "",
         },
         {
           id: uuid.v4(),
@@ -99,17 +80,6 @@ class MainController {
           latitude: 22.346,
           longitude: 31.6156,
           heroPicture: `${domain}/images/locations/abu-simbel.jpg`,
-          pictures: [
-            "photo5",
-            "photo6",
-            "photo7",
-            "photo8",
-            "photo1",
-            "photo2",
-            "photo3",
-            "photo4",
-          ],
-          advisory: "",
         },
         {
           id: uuid.v4(),
@@ -122,16 +92,6 @@ class MainController {
           latitude: 45.4384,
           longitude: 10.9916,
           heroPicture: `${domain}/images/locations/verona.jpg`,
-          pictures: [
-            "photo6",
-            "photo7",
-            "photo8",
-            "photo1",
-            "photo2",
-            "photo3",
-            "photo4",
-          ],
-          advisory: "",
         },
         {
           id: uuid.v4(),
@@ -144,17 +104,6 @@ class MainController {
           latitude: 27.1751,
           longitude: 78.0421,
           heroPicture: `${domain}/images/locations/taj-mahal.jpg`,
-          pictures: [
-            "photo7",
-            "photo8",
-            "photo1",
-            "photo2",
-            "photo3",
-            "photo4",
-            "photo5",
-            "photo6",
-          ],
-          advisory: "",
         },
         {
           id: uuid.v4(),
@@ -167,8 +116,6 @@ class MainController {
           latitude: 5.4141,
           longitude: 100.3288,
           heroPicture: `${domain}/images/locations/penang.jpg`,
-          pictures: ["photo8", "photo1", "photo2", "photo3", "photo4"],
-          advisory: "",
         },
         {
           id: uuid.v4(),
@@ -181,18 +128,6 @@ class MainController {
           latitude: -33.41,
           longitude: 150.3037,
           heroPicture: `${domain}/images/locations/blue-mountains.jpg`,
-          pictures: [
-            "photo1",
-            "photo2",
-            "photo3",
-            "photo4",
-            "photo5",
-            "photo6",
-            "photo7",
-            "photo8",
-          ],
-          advisory:
-            "We accept no liability for any visitors eaten alive by drop bears.",
         },
         {
           id: uuid.v4(),
@@ -205,18 +140,6 @@ class MainController {
           latitude: 35.0116,
           longitude: 135.7681,
           heroPicture: `${domain}/images/locations/kyoto.jpg`,
-          pictures: [
-            "photo2",
-            "photo3",
-            "photo4",
-            "photo5",
-            "photo6",
-            "photo7",
-            "photo8",
-            "photo1",
-          ],
-          advisory:
-            "We accept no liability for any visitors eaten alive by Pokemon.",
         },
       ]);
     } catch (exception) {
