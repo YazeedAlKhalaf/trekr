@@ -8,7 +8,7 @@
 import Foundation
 
 struct Location : Decodable, Identifiable {
-    let id: Int
+    let id: String
     let name: String
     let country: String
     let countryFlag: String
@@ -20,7 +20,7 @@ struct Location : Decodable, Identifiable {
     let advisory: String
     
     static let example = Location(
-        id: 1,
+        id: "1",
         name: "Great Smokey Mountains",
         country: "United States",
         countryFlag: "🇺🇸",
