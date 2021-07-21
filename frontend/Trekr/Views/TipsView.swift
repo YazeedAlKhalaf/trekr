@@ -11,23 +11,29 @@ struct TipsView: View {
     @EnvironmentObject var tipsService: TipsService
     
     var body: some View {
-        List(
-            tipsService.tips,
-            id: \.text,
-            children: \.children
-        ) { tip in
-            if tip.children != nil {
-                Label(
-                    tip.text,
-                    systemImage: "quote.bubble"
-                )
-                .font(.headline)
+        if !tipsService.gotData {
+            ProgressView()
+                .navigationTitle("Tips")
+        } else {
+            List(
+                tipsService.tips,
+                id: \.text,
+                children: \.children
+            ) { tip in
+                if tip.children != nil {
+                    Label(
+                        tip.text,
+                        systemImage: "quote.bubble"
+                    )
+                        .font(.headline)
+                }
+                
+                if tip.children == nil {
+                    Text(tip.text)
+                }
             }
-            
-            if tip.children == nil {
-                Text(tip.text)
-            }
-        }.navigationTitle("Tips")
+            .navigationTitle("Tips")
+        }
     }
 }
 

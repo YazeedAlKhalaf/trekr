@@ -8,11 +8,25 @@
 import Foundation
 
 class TipsService: ObservableObject {
-    var tips: [Tip]
+    @Published var tips: [Tip] = [Tip]()
+    @Published var gotData: Bool = false
     
     init() {
-        let url = Bundle.main.url(forResource: "tips", withExtension: "json")!
-        let data = try! Data(contentsOf: url)
-        tips = try! JSONDecoder().decode([Tip].self, from: data)
+        getTips()
+    }
+    
+    private func getTips() {
+        guard let url = URL(string: "https://trekr-api.herokuapp.com/tips") else { return }
+    
+        URLSession.shared.dataTask(with: url) {data, response, error in
+            guard let data = data else { return }
+            
+            let tips = try! JSONDecoder().decode([Tip].self, from: data)
+            
+            DispatchQueue.main.async {
+                self.tips = tips
+                self.gotData = true
+            }
+        }.resume()
     }
 }
