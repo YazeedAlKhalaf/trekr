@@ -2,12 +2,33 @@
 
 ## Screenshots 📱
 
-| Light                                                                                                             | Dark                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/1_light.png" width="200px" /> | <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/1_dark.png" width="200px" /> |
-| <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/2_light.png" width="200px" /> | <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/2_dark.png" width="200px" /> |
-| <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/3_light.png" width="200px" /> | <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/3_dark.png" width="200px" /> |
-| <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/4_light.png" width="200px" /> | <img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/4_dark.png" width="200px" /> |
+Open the toggle below to view the awesome screenshots of Trekr.
+
+<details>
+<summary>Awesome Screenshots of Trekr ✨</summary>
+<table>
+    <tr>
+        <th>Light</th>
+        <th>Dark</th>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/1_light.png" width="150px" /></td>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/1_dark.png" width="150px" /></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/2_light.png" width="150px" /></td>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/2_dark.png" width="150px" /></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/3_light.png" width="150px" /></td>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/3_dark.png" width="150px" /></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/4_light.png" width="150px" /></td>
+        <td><img src="https://raw.githubusercontent.com/YazeedAlKhalaf/trekr/main/readme_images/4_dark.png" width="150px" /></td>
+    </tr>
+</table>
+</details>
 
 ## Contributing 🙌
 
