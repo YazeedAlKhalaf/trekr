@@ -1,5 +1,4 @@
 import { Request, Response, Router } from "express";
-import path from "path";
 
 class MainController {
   public path: string = "/";
@@ -15,7 +14,7 @@ class MainController {
 
   private async discover(req: Request, res: Response) {
     try {
-      const protocol = req.protocol;
+      const protocol = process.env.NODE_ENV == "production" ? "https" : "http";
       const host = req.get("host");
       const domain = `${protocol}://${host}`;
 
