@@ -12,10 +12,10 @@ struct LocationWidget: View {
     
     var body: some View {
         ZStack() {
-            Image(location.heroPicture)
-                .resizable()
-                .scaledToFit()
+            NetworkImageWidget(url: location.heroPicture)
                 .cornerRadius(15)
+                .frame(height: 200)
+                .frame(maxWidth: .infinity)
                 .padding()
                 .overlay(
                     Rectangle()

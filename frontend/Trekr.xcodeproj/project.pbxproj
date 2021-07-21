@@ -10,6 +10,8 @@
 		05014F4326A76B9D00C8D730 /* NetworkMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05014F4226A76B9D00C8D730 /* NetworkMonitorService.swift */; };
 		05014F4626A7712100C8D730 /* TrekrAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05014F4526A7712100C8D730 /* TrekrAppWidget.swift */; };
 		05014F4826A7718900C8D730 /* NoInternetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05014F4726A7718900C8D730 /* NoInternetWidget.swift */; };
+		05147D2A26A814A400D3A4D2 /* NetworkImageWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05147D2926A814A400D3A4D2 /* NetworkImageWidget.swift */; };
+		05147D2C26A814B800D3A4D2 /* NetworkImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05147D2B26A814B800D3A4D2 /* NetworkImageService.swift */; };
 		055F4DE226A70F500099DABD /* TrekrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DE126A70F500099DABD /* TrekrApp.swift */; };
 		055F4DE426A70F500099DABD /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F4DE326A70F500099DABD /* DiscoverView.swift */; };
 		055F4DE626A70F510099DABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055F4DE526A70F510099DABD /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		05014F4226A76B9D00C8D730 /* NetworkMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorService.swift; sourceTree = "<group>"; };
 		05014F4526A7712100C8D730 /* TrekrAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekrAppWidget.swift; sourceTree = "<group>"; };
 		05014F4726A7718900C8D730 /* NoInternetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetWidget.swift; sourceTree = "<group>"; };
+		05147D2926A814A400D3A4D2 /* NetworkImageWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageWidget.swift; sourceTree = "<group>"; };
+		05147D2B26A814B800D3A4D2 /* NetworkImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageService.swift; sourceTree = "<group>"; };
 		055F4DDE26A70F500099DABD /* Trekr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trekr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055F4DE126A70F500099DABD /* TrekrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekrApp.swift; sourceTree = "<group>"; };
 		055F4DE326A70F500099DABD /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				05014F4226A76B9D00C8D730 /* NetworkMonitorService.swift */,
+				05147D2B26A814B800D3A4D2 /* NetworkImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				05014F4526A7712100C8D730 /* TrekrAppWidget.swift */,
 				055F4E0B26A73A360099DABD /* LocationWidget.swift */,
 				05014F4726A7718900C8D730 /* NoInternetWidget.swift */,
+				05147D2926A814A400D3A4D2 /* NetworkImageWidget.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				055F4DE426A70F500099DABD /* DiscoverView.swift in Sources */,
 				055F4DF526A70F510099DABD /* Location.swift in Sources */,
 				055F4E0C26A73A360099DABD /* LocationWidget.swift in Sources */,
+				05147D2C26A814B800D3A4D2 /* NetworkImageService.swift in Sources */,
 				055F4DF926A70F510099DABD /* WorldView.swift in Sources */,
 				05014F4826A7718900C8D730 /* NoInternetWidget.swift in Sources */,
 				05014F4626A7712100C8D730 /* TrekrAppWidget.swift in Sources */,
@@ -251,6 +258,7 @@
 				055F4E0A26A7337F0099DABD /* LocationInfoView.swift in Sources */,
 				05014F4326A76B9D00C8D730 /* NetworkMonitorService.swift in Sources */,
 				055F4DF726A70F510099DABD /* LocationsLoader.swift in Sources */,
+				05147D2A26A814A400D3A4D2 /* NetworkImageWidget.swift in Sources */,
 				055F4DE226A70F500099DABD /* TrekrApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
