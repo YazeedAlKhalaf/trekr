@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LocationsLoader: ObservableObject {
+class LocationsService: ObservableObject {
     @Published var locations: [Location] = [Location]()
     @Published var gotData: Bool = false
     

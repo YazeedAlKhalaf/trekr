@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TipsLoader: ObservableObject {
+class TipsService: ObservableObject {
     var tips: [Tip]
     
     init() {

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TipsView: View {
-    @EnvironmentObject var tipsLoader: TipsLoader
+    @EnvironmentObject var tipsService: TipsService
     
     var body: some View {
         List(
-            tipsLoader.tips,
+            tipsService.tips,
             id: \.text,
             children: \.children
         ) { tip in

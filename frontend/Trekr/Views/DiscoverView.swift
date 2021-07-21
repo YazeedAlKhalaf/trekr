@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DiscoverView: View {
-    @EnvironmentObject var locationsLoader: LocationsLoader
+    @EnvironmentObject var locationsLoader: LocationsService
     
     var body: some View {
         if !locationsLoader.gotData {

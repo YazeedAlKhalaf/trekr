@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct TrekrAppWidget: View {
-    @StateObject var locationsLoader: LocationsLoader = LocationsLoader()
-    @StateObject var tipsLoader: TipsLoader = TipsLoader()
+    @StateObject var locationsService: LocationsService = LocationsService()
+    @StateObject var tipsService: TipsService = TipsService()
     
     var body: some View {
         TabView {
@@ -43,7 +43,7 @@ struct TrekrAppWidget: View {
                 )
             }
         }
-        .environmentObject(locationsLoader)
-        .environmentObject(tipsLoader)
+        .environmentObject(locationsService)
+        .environmentObject(tipsService)
     }
 }
