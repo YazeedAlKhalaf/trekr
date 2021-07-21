@@ -39,9 +39,3 @@ struct LocationWidget: View {
         }
     }
 }
-
-struct LocationWidget_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationWidget(location: Location.example)
-    }
-}

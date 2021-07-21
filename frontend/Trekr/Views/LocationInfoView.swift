@@ -38,11 +38,3 @@ struct LocationInfoView: View {
         }.navigationTitle("Location Info")
     }
 }
-
-struct LocationInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            LocationInfoView(location: Location.example)
-        }
-    }
-}

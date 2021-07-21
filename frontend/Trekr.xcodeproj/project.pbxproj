@@ -96,7 +96,6 @@
 				055F4DEA26A70F510099DABD /* Info.plist */,
 				055F4DE126A70F500099DABD /* TrekrApp.swift */,
 				055F4DE526A70F510099DABD /* Assets.xcassets */,
-				055F4E0126A722490099DABD /* Loaders */,
 				055F4E0026A7222E0099DABD /* Models */,
 				055F4DE726A70F510099DABD /* Preview Content */,
 				05014F4426A76BA600C8D730 /* Services */,
@@ -121,13 +120,6 @@
 				055F4DF426A70F510099DABD /* Location.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		055F4E0126A722490099DABD /* Loaders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Loaders;
 			sourceTree = "<group>";
 		};
 		055F4E0226A722590099DABD /* Views */ = {

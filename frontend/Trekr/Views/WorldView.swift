@@ -46,9 +46,3 @@ struct WorldView: View {
         .navigationTitle("Locations")
     }
 }
-
-struct WorldView_Previews: PreviewProvider {
-    static var previews: some View {
-        WorldView()
-    }
-}

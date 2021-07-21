@@ -32,11 +32,3 @@ struct DiscoverView: View {
         }
     }
 }
-
-struct DiscoverView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            DiscoverView()
-        }
-    }
-}
