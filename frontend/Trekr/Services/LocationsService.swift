@@ -16,33 +16,20 @@ class LocationsService: ObservableObject {
     }
     
     init() {
-        getLocations(
-            completion: { locations in
-                self.locations = locations
-                self.gotData = true
-            }
-        )
+        getLocations()
     }
     
-    private func getLocations(completion: @escaping ([Location]) -> ()) {
-        guard
-            let url = URL(string: "https://trekr-api.herokuapp.com/discover")
-        else {
-            print("invalid url")
-            return
-        }
+    private func getLocations() {
+        guard let url = URL(string: "https://trekr-api.herokuapp.com/discover") else { return }
         
-        // make request
-        URLSession.shared.dataTask(
-            with: url
-        ) { data, response, error in
-            let locations = try! JSONDecoder().decode(
-                [Location].self,
-                from: data!
-            )
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else { return }
+            
+            let locations = try! JSONDecoder().decode([Location].self, from: data)
             
             DispatchQueue.main.async {
-                completion(locations)
+                self.locations = locations
+                self.gotData = true
             }
         }.resume()
     }

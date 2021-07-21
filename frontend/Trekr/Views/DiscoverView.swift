@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct DiscoverView: View {
-    @EnvironmentObject var locationsLoader: LocationsService
+    @EnvironmentObject var locationsService: LocationsService
     
     var body: some View {
-        if !locationsLoader.gotData {
+        if !locationsService.gotData {
             ProgressView()
                 .navigationTitle("Discover")
         } else {
             ScrollView {
-                ForEach(locationsLoader.locations) {location in
+                ForEach(locationsService.locations) {location in
                     NavigationLink(
                         destination: LocationInfoView(
                             location: location

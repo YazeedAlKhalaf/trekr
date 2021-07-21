@@ -17,7 +17,7 @@ class TipsService: ObservableObject {
     
     private func getTips() {
         guard let url = URL(string: "https://trekr-api.herokuapp.com/tips") else { return }
-    
+        
         URLSession.shared.dataTask(with: url) {data, response, error in
             guard let data = data else { return }
             
