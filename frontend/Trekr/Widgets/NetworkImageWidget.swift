@@ -24,6 +24,7 @@ struct NetworkImageWidget: View {
                     .scaledToFit()
             } else {
                 ProgressView()
+                    .frame(idealHeight: UIScreen.main.bounds.width / 16 * 9)
             }
         }
         .onAppear {

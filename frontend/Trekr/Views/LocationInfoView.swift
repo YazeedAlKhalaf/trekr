@@ -12,9 +12,7 @@ struct LocationInfoView: View {
     
     var body: some View {
         ScrollView {
-            Image(location.heroPicture)
-                .resizable()
-                .scaledToFit()
+            NetworkImageWidget(url: location.heroPicture)
                 .cornerRadius(15)
                 .padding()
             

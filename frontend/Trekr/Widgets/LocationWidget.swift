@@ -14,8 +14,6 @@ struct LocationWidget: View {
         ZStack() {
             NetworkImageWidget(url: location.heroPicture)
                 .cornerRadius(15)
-                .frame(height: 200)
-                .frame(maxWidth: .infinity)
                 .padding()
                 .overlay(
                     Rectangle()
