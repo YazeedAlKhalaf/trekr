@@ -17,7 +17,6 @@ struct Location : Decodable, Identifiable {
     let latitude: Double
     let longitude: Double
     let heroPicture: String
-    let advisory: String
     
     static let example = Location(
         id: "1",
@@ -28,7 +27,6 @@ struct Location : Decodable, Identifiable {
         more: "The Great Smokies are part of an International Biosphere Reserve. The range is home to an estimated 187,000 acres (76,000 ha) of old growth forest, constituting the largest such stand east of the Mississippi River. The cove hardwood forests in the range's lower elevations are among the most diverse ecosystems in North America, and the Southern Appalachian spruce-fir forest that coats the range's upper elevations is the largest of its kind. The Great Smokies are also home to the densest black bear population in the Eastern United States and the most diverse salamander population outside of the tropics.",
         latitude: 35.6532,
         longitude: -83.5070,
-        heroPicture: "smokies",
-        advisory: "We accept no liability for any visitors eaten alive by bears."
+        heroPicture: "smokies"
     )
 }
