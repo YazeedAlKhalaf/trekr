@@ -15,6 +15,10 @@ class MainController {
 
   private async discover(req: Request, res: Response) {
     try {
+      const protocol = req.protocol;
+      const host = req.get("host");
+      const domain = `${protocol}://${host}`;
+
       return res.status(200).json([
         {
           id: 1,
@@ -25,7 +29,7 @@ class MainController {
           more: "The area is very sparsely populated, with many mountain ranges dominating the region, and includes the highest mountain in the British Isles, Ben Nevis. During the 18th and early 19th centuries the population of the Highlands rose to around 300,000, but from c. 1841 and for the next 160 years, the natural increase in population was exceeded by emigration (mostly to Canada, the United States, Australia and New Zealand, and migration to the industrial cities of Scotland and England.) The area is now one of the most sparsely populated in Europe. At 9.1/km2 (24/sq mi) in 2012, the population density in the Highlands and Islands is less than one seventh of Scotland's as a whole, comparable with that of Bolivia, Chad and Russia.",
           latitude: 57.12,
           longitude: -4.71,
-          heroPicture: "highlands",
+          heroPicture: `${domain}/images/highlands.jpg`,
           pictures: ["photo2", "photo3", "photo4"],
           advisory:
             "We accept no liability for any visitors eaten alive by midges.",
@@ -39,7 +43,7 @@ class MainController {
           more: "The Great Smokies are part of an International Biosphere Reserve. The range is home to an estimated 187,000 acres (76,000 ha) of old growth forest, constituting the largest such stand east of the Mississippi River. The cove hardwood forests in the range's lower elevations are among the most diverse ecosystems in North America, and the Southern Appalachian spruce-fir forest that coats the range's upper elevations is the largest of its kind. The Great Smokies are also home to the densest black bear population in the Eastern United States and the most diverse salamander population outside of the tropics.",
           latitude: 35.6532,
           longitude: -83.507,
-          heroPicture: "smokies",
+          heroPicture: `${domain}/images/smokies.jpg`,
           pictures: [
             "photo1",
             "photo2",
@@ -62,7 +66,7 @@ class MainController {
           more: 'Knight Inlet is one of the longest on the BC Coast at c. 125 km (78 mi) in length; it is about 2.5 km (1.6 mi) in average width. Its great volume of water causes a major current and severe turbulence at its mouth during tidal changes, and outflow winds from it, which pour out of the BC Interior, are a hazard to small vessels in the Queen Charlotte Strait. It is fed by the Klinaklini River, which begins on the western edge of the Chilcotin Plateau and is fed by the massive Klinaklini Glacier, one of the two main eastern "tongues" of the Ha-Iltzuk Icefield, one of the largest of the ice caps of the southern Coast Mountains and also home to the Silverthrone Caldera volcanic bowl.',
           latitude: 50.8883,
           longitude: -125.5857,
-          heroPicture: "knight-inlet",
+          heroPicture: `${domain}/images/knight-inlet.jpg`,
           pictures: ["photo3", "photo4", "photo5", "photo6", "photo7"],
           advisory: "",
         },
@@ -75,7 +79,7 @@ class MainController {
           more: "The park protects most of the island's remaining rainforest although much of this has been degraded by introduced plants such as Chinese guava and privet and animals such as rusa deer and wild pigs. Several areas have been fenced off and invasive species have been eradicated from them to preserve native wildlife. Many endemic plants and animals still occur in the park including the Mauritian flying fox and all of the island's endemic birds: Mauritius kestrel, pink pigeon, Mauritius parakeet, Mauritius cuckooshrike, Mauritius bulbul, Mauritius olive white-eye, Mauritius grey white-eye and Mauritius fody.",
           latitude: -20.4264,
           longitude: 57.4509,
-          heroPicture: "black-river-gorges",
+          heroPicture: `${domain}/images/black-river-gorges.jpg`,
           pictures: ["photo4", "photo5", "photo6", "photo7", "photo8"],
           advisory: "",
         },
@@ -88,7 +92,7 @@ class MainController {
           more: "In the past, Abu Simbel was located on the west bank of the Nile between the first and second Cataracts of the Nile. Cataracts are rapids caused by boulders or rock sills; they were only passable with difficulty by Nile ship traffic, especially at baseflow. Today both cataracts near Aswan and Wadi Halfa are covered by Lake Nasser, which is named after Gamal Abdel Nasser, Egyptian president from 1954 to 1970. At the time of Ramses II, the southern border of the realm of the Pharaohs was located near the two cataracts. The construction of the Abu Simbel temple compound there was meant to demonstrate the power and eternal supremacy of Egypt with respect to the tributary Nubia.",
           latitude: 22.346,
           longitude: 31.6156,
-          heroPicture: "abu-simbel",
+          heroPicture: `${domain}/images/abu-simbel.jpg`,
           pictures: [
             "photo5",
             "photo6",
@@ -110,7 +114,7 @@ class MainController {
           more: "Between the 13th and 14th century the city was ruled by the Della Scala Family. Under the rule of the family, in particular of Cangrande I della Scala, the city experienced great prosperity, becoming powerful, rich and being surrounded with new walls. The Della Scala era is survived in numerous monuments around Verona. Two of William Shakespeare's plays are set in Verona: Romeo and Juliet and The Two Gentlemen of Verona. It is unknown if Shakespeare ever visited Verona or Italy, but his plays have lured many visitors to Verona and surrounding cities. The city has been declared a World Heritage Site by UNESCO because of its urban structure and architecture.",
           latitude: 45.4384,
           longitude: 10.9916,
-          heroPicture: "verona",
+          heroPicture: `${domain}/images/verona.jpg`,
           pictures: [
             "photo6",
             "photo7",
@@ -131,7 +135,7 @@ class MainController {
           more: "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage\". It is regarded by many as the best example of Mughal architecture and a symbol of India's rich history. The Taj Mahal attracts 7–8 million visitors a year and in 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.",
           latitude: 27.1751,
           longitude: 78.0421,
-          heroPicture: "taj-mahal",
+          heroPicture: `${domain}/images/taj-mahal.jpg`,
           pictures: [
             "photo7",
             "photo8",
@@ -153,7 +157,7 @@ class MainController {
           more: "Penang's modern history began in 1786, upon the establishment of George Town by Francis Light. Penang formed part of the Straits Settlements in 1826, which became a British crown colony in 1867. Direct British rule was only briefly interrupted during World War II, when Japan occupied Penang; the British retook Penang in 1945. Penang was later merged with the Federation of Malaya (now Malaysia), which gained independence from the British in 1957. Following the decline of its entrepôt trade towards the 1970s, Penang's economy was reoriented towards hi-tech manufacturing.",
           latitude: 5.4141,
           longitude: 100.3288,
-          heroPicture: "penang",
+          heroPicture: `${domain}/images/penang.jpg`,
           pictures: ["photo8", "photo1", "photo2", "photo3", "photo4"],
           advisory: "",
         },
@@ -166,7 +170,7 @@ class MainController {
           more: "The Blue Mountains Range comprises a range of mountains, plateau escarpments extending off the Great Dividing Range about 4.8 kilometres (3.0 mi) northwest of Wolgan Gap in a generally southeasterly direction for about 96 kilometres (60 mi), terminating at Emu Plains. For about two-thirds of its length it is traversed by the Great Western Highway and the Main Western railway line. Several established towns are situated on its heights, including Katoomba, Blackheath, Mount Victoria, and Springwood. The range forms the watershed between Coxs River to the south and the Grose and Wolgan rivers to the north. The range contains the Explorer Range and the Bell Range.",
           latitude: -33.41,
           longitude: 150.3037,
-          heroPicture: "blue-mountains",
+          heroPicture: `${domain}/images/blue-mountains.jpg`,
           pictures: [
             "photo1",
             "photo2",
@@ -189,7 +193,7 @@ class MainController {
           more: "In 794, Kyoto (then known as Heian-kyō) was chosen as the new seat of Japan's imperial court. The original city was arranged in accordance with traditional Chinese feng shui following the model of the ancient Chinese capital of Chang'an. The Imperial Palace faced south, resulting in Ukyō (the right sector of the capital) being on the west while Sakyō (the left sector) is on the east. The streets in the modern-day wards of Nakagyō, Shimogyō, and Kamigyō-ku still follow a grid pattern.",
           latitude: 35.0116,
           longitude: 135.7681,
-          heroPicture: "kyoto",
+          heroPicture: `${domain}/images/kyoto.jpg`,
           pictures: [
             "photo2",
             "photo3",

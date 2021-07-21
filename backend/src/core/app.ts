@@ -12,6 +12,8 @@ class App {
     this.app = express();
     this.port = appInit.port;
 
+    this.app.use(express.static(`${__dirname}/../static`));
+
     this.middlewares(appInit.middlewares);
     this.routes(appInit.controllers);
   }
