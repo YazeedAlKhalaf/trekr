@@ -23,6 +23,39 @@ class MainController {
       return res.status(200).json([
         {
           id: uuid.v4(),
+          name: "Empty Quarter",
+          country: "Saudi Arabia",
+          countryFlag: "🇸🇦",
+          description: `The desert is 1,000 kilometres (620 miles) long, and 500 kilometres (310 miles) wide. Its surface elevation varies from 800 metres (2,600 ft) in the southwest to around sea level in the northeast. The terrain is covered with sand dunes with heights up to 250 metres (820 ft), interspersed with gravel and gypsum plains.[3][4] The sand is of a reddish-orange color due to the presence of feldspar.
+
+There are also brackish salt flats in some areas, such as the Umm al Samim area on the desert's eastern edge. Ali Al-Naimi reports that the sand dunes don't drift. He goes on to say,
+
+Sand blows off the surface, of course, but the essential shape of the dunes remains intact, probably due to the moisture leaching up into the base of the dunes from the surrounding sabkhas.
+
+Today the inhabitants of the Empty Quarter are members of various local tribes – for example, the Al Murrah tribe has the largest area mainly based between Al-Ahsa and Najran. The Banu Yam and Banu Hamdan (in Yemen and the Najran region of southern Saudi Arabia), and the Bani Yas (in the United Arab Emirates). A few road links connect these tribal settlements to the area's water resources and oil production centers.`,
+          more: `The first documented journeys by non-resident explorers were made by British explorers Bertram Thomas and St. John Philby in the early 1930s. Between 1946 and 1950, Wilfred Thesiger crossed the area several times and mapped large parts of the Empty Quarter including the mountains of Oman, as described in his 1959 book Arabian Sands.
+
+In June 1950, a US Air Force expedition crossed the Rub' al Khali from Dhahran, Saudi Arabia, to central Yemen and back in trucks to collect specimens for the Smithsonian Institution and to test desert survival procedures.
+
+In 1999, Jamie Clarke became the first Westerner to cross the Empty Quarter of Arabia in fifty years. His team of six, guided by three Bedouin, spent 40 days crossing the desert with a caravan of 13 camels.
+
+On 25 February 2006, a scientific excursion organized by the Saudi Geological Survey began to explore the Empty Quarter. The expedition consisted of 89 environmentalists, geologists, and scientists from Saudi Arabia and abroad. Various types of fossilized creatures as well as meteorites were discovered in the desert. The expedition discovered 31 new plant species and plant varieties, as well as 24 species of birds that inhabit the region, which fascinated scientists as to how they have survived under the harsh conditions of the Empty Quarter.
+
+In March 2012, Hajar Ali made the first known crossing of the Rub' al Khali by a woman.
+
+On 4 February 2013, a South African team including Alex Harris, Marco Broccardo, and David Joyce became the first people to cross the border close to Oman of the Empty Quarter unsupported and on foot, in a journey which started in Salalah and lasted 40 days, eventually ending in Dubai. The team only made use of three water stops along the journey, and pulled a specially designed cart which housed all the supplies necessary for the entire expedition.
+
+In 2013, from 18 February to 28 March, South Korean explorer Young-Ho Nam led a team (Agustin Arroyo Bezanilla, Si-Woo Lee) on a crossing through the Empty Quarter on foot from Salalah, Oman, to Liwa Oasis in the UAE Emirate of Abu Dhabi. The crossing was performed with permission from the governments of Oman and UAE. Dewan Ruler's Representative for Western Region, Emirate of Abu Dhabi recognized it as the world's first on-foot crossing of the Empty Quarter following the border of Oman and ending in UAE.
+
+In 2018, the first all female walking expedition named "her faces of change" led by British Janey McGill who was accompanied by the first Omani women in modern times to walk the Oman Empty Quarter, Baida Al Zadjali and Atheer Al Sabri, set off on the 22nd of December 2018 after receiving formal approval from the government of Oman. The team was supported by two cars for supplies driven by Tariq Al Zadjali (Omani) and Mark Vause-Jones (British) and filmmaker Matthew Milan from the United States of America. The expedition started from Al Hashman in the Dohafar Governate of Oman crossing through Burkana, Maqshin, and Al Sahma in Al Wusta Region continuing through Abu Al Tabool, Um Al Sameem ending at Ibri fort in Al Dhahira region of Oman. The total distance walked by the team was 758 km in 28 days ending the expedition on 18.01.2019.
+
+In 2020, Italian extreme desert explorer Max Calderan completed Rub' al Khali exploration on foot for the first time ever. He crossed 1,100 kilometres (680 mi) in 18 days, crossing the widest area of Rub' al Khali from west to east.`,
+          latitude: 21.0953,
+          longitude: 48.719,
+          heroPicture: `${domain}/images/locations/empty-quarter.jpg`,
+        },
+        {
+          id: uuid.v4(),
           name: "The Highlands",
           country: "United Kingdom",
           countryFlag: "🇬🇧",
