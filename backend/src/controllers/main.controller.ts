@@ -1,4 +1,5 @@
 import { Request, Response, Router } from "express";
+import * as uuid from "uuid";
 
 class MainController {
   public path: string = "/";
@@ -21,7 +22,7 @@ class MainController {
 
       return res.status(200).json([
         {
-          id: 1,
+          id: uuid.v4(),
           name: "The Highlands",
           country: "United Kingdom",
           countryFlag: "🇬🇧",
@@ -36,7 +37,7 @@ class MainController {
             "We accept no liability for any visitors eaten alive by midges.",
         },
         {
-          id: 2,
+          id: uuid.v4(),
           name: "Great Smoky Mountains",
           country: "United States",
           countryFlag: "🇺🇸",
@@ -60,7 +61,7 @@ class MainController {
             "We accept no liability for any visitors eaten alive by bears.",
         },
         {
-          id: 3,
+          id: uuid.v4(),
           name: "Knight Inlet",
           country: "Canada",
           countryFlag: "🇨🇦",
@@ -74,7 +75,7 @@ class MainController {
           advisory: "",
         },
         {
-          id: 4,
+          id: uuid.v4(),
           name: "Black River Gorges",
           country: "Mauritius",
           countryFlag: "🇲🇺",
@@ -88,7 +89,7 @@ class MainController {
           advisory: "",
         },
         {
-          id: 5,
+          id: uuid.v4(),
           name: "Abu Simbel",
           country: "Egypt",
           countryFlag: "🇪🇬",
@@ -111,7 +112,7 @@ class MainController {
           advisory: "",
         },
         {
-          id: 6,
+          id: uuid.v4(),
           name: "Verona",
           country: "Italy",
           countryFlag: "🇮🇹",
@@ -133,7 +134,7 @@ class MainController {
           advisory: "",
         },
         {
-          id: 7,
+          id: uuid.v4(),
           name: "Taj Mahal",
           country: "India",
           countryFlag: "🇮🇳",
@@ -156,7 +157,7 @@ class MainController {
           advisory: "",
         },
         {
-          id: 8,
+          id: uuid.v4(),
           name: "Penang",
           country: "Malaysia",
           countryFlag: "🇲🇾",
@@ -170,7 +171,7 @@ class MainController {
           advisory: "",
         },
         {
-          id: 9,
+          id: uuid.v4(),
           name: "Blue Mountains",
           country: "Australia",
           countryFlag: "🇦🇺",
@@ -194,7 +195,7 @@ class MainController {
             "We accept no liability for any visitors eaten alive by drop bears.",
         },
         {
-          id: 10,
+          id: uuid.v4(),
           name: "Kyoto",
           country: "Japan",
           countryFlag: "🇯🇵",
